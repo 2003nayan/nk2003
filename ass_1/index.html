@@ -1,0 +1,82 @@
+<!DOCTYPE html>     <!--Defines the document type i.e HTML-->
+<html lang="en">    <!--Specifies the language in whcih the document is written i.e english-->
+<head>              <!--Contains meta - information and links to external resources like CSS styles and scripts-->
+
+    <meta charset="UTF-8">      <!--Tells browser to use utf-8 character encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page fits the device's screen  -->
+
+    <title>Admin Dashboard</title> <!--Title of the webpage-->
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Linking Bootsrap to this file, where the relationship is specified by "stylesheet" and href stores the link-->
+
+    <!-- Include custom CSS styles -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>          <!-- Stores the visible content of the webpage -->
+    <div class="container-fluid"> <!-- This is basically the class name with special set of instructions in it, and used to store contents of the webpage -->
+
+        <div class="row"> <!-- Used to structure the content horizontally in the container -->
+            <!-- Sidebar -->
+            <div class="col-lg-3 col-md-4 col-12 sidebar"> <!-- Commonly used framework in CSS (Bootstrap) specifies the no. of columns used in large-3, medium-4, small and extra-small-12 screens  -->
+
+                <ul> <!-- Creates an unordered list with bullet points-->
+
+                    <!-- Sidebar item: Dashboard -->
+                    <li><a href="#">Dashboard</a></li> <!-- li is the item stored in the unordered list and it is basically a navigation link-->
+
+                    <!-- Sidebar item: Students -->
+                    <li><a href="#">Students</a></li>
+                    <!-- Sidebar item: Subjects -->
+                    <li><a href="#">Subjects</a></li>
+                    <!-- Sidebar item: Invigilators -->
+                    <li><a href="#">Invigilators</a></li>
+                    <!-- Add more sidebar items as needed -->
+                </ul>
+            </div>
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8 col-12 content"> <!--This is the main content area structured in columns -->
+                <div class="row">       <!-- A row inside the main content to write some info -->
+                    <!-- Statistics Cards -->
+                    <!-- Card for displaying the total number of students -->
+                    <div class="col-lg-3 col-md-4 col-6">       <!-- The no. of columns the elements should span according to the screen size -->
+                        <div class="card statistic-card primary">   <!-- card specifies the structure, and staistic card specifies additional specific features to it, and primary is a custom name which will depict according to it's styling in CSS -->
+                            
+                            <div class="card-body">
+                                <h5 class="card-title">Total Students</h5> <!-- 5th level of heading -->
+                                <p class="card-text">2000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card for displaying the number of present students -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="card statistic-card success">
+                            <div class="card-body">
+                                <h5 class="card-title">Present Students</h5>
+                                <p class="card-text">1790</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card for displaying the number of absent students -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="card statistic-card info">
+                            <div class="card-body">
+                                <h5 class="card-title">Absent Students</h5>
+                                <p class="card-text">210</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card for displaying the total number of subjects -->
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="card statistic-card warning">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Subjects</h5>
+                                <p class="card-text">10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

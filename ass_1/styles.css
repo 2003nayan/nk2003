@@ -1,0 +1,85 @@
+/* Add this in your styles.css */
+body {
+    background-color: #f2f4f7;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #1d2731;
+    color: #fff;
+    padding: 80px;
+    min-height: 100vh;
+    transition: 0.2s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.content {
+    padding: 50px;
+    background-color: #f2f4f7;
+}
+
+.card {
+    margin-bottom: 50px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styling for statistics cards */
+.statistic-card {
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    min-height: 150px;
+}
+
+.primary {
+    background-color: #5e9a6e;
+    color: #fff;
+}
+
+.success {
+    background-color: #66a3b5;
+    color: #fff;
+}
+
+.info {
+    background-color: #ffaa6b;
+    color: #fff;
+}
+
+.warning {
+    background-color: #f76d57;
+    color: #fff;
+}
+
+/* Sidebar hover effect */
+.sidebar:hover {
+    width: 250px;
+}
+
+/* Sidebar responsive transition */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        background-color: #1d2731;
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,67 @@
+/* Custom styles for your college website */
+
+/* Navbar */
+.navbar {
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #63cfe2
+}
+
+.navbar li {
+    font-size: 25px;
+    color: #63cfe2
+}
+
+/* Header Banner */
+.banner {
+    background-image: url('images/college banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #004b9b;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Course Listings */
+#course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #63cfe2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* News Articles */
+.news-article {
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #63e263;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Events */
+.event {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #cd63e2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

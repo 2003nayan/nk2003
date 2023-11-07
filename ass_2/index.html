@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <form id="registrationForm"> <!-- Forms are used to collect and submit the data-->
+            <label for="name">Name:</label> 
+            <input type="text" id="name" name="name" required> <!-- It is required which means it is mandatory -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Submit</button> <!-- Button element is for submitting the form data, which triggers the form submission while clicked -->
+        </form>
+    </div>
+
+    <script src="script.js"></script> <!-- External JS file is linked to add functionality to the webpage-->
+</body>
+</html>
