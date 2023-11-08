@@ -1,0 +1,19 @@
+1.open vs code
+2. open terminal
+
+for DOCKER
+1.docker images
+(shows the available images)
+
+2. docker ps 
+(shows the container available in docker)
+
+3.download image from hub.docker.com
+
+4.docker pull "image name"
+(download the image)
+
+5.docker run --name "Filename" -it -d repository name
+(to run the container)
+
+6.docker exec -"filename" command
